@@ -1,0 +1,38 @@
+.address {
+    @include centeredFlex();
+    margin-left: auto;
+}
+
+.address__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.address__link {
+    @include centeredFlex();
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: getColor('secondary-text-color');
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    @include transition(color);
+
+    &:hover,
+    &:focus {
+        color: getColor('accent');
+    }
+}
+
+.address__icons {
+    margin-right: 10px;
+    fill: getColor('secondary-text-color');
+
+    @include transition(fill);
+    
+    .address__link:hover &,
+    .address__link:focus &{
+        fill: getColor('accent');
+    }
+}
+

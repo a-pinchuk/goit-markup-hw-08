@@ -1,0 +1,48 @@
+.clients {
+    @extend %section;
+}
+
+.clients__title{
+    font-family: $roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+
+.clients__tumb{
+    display: flex;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    padding: 16px 32px;
+
+    @include transition();
+
+    &:hover,
+    &:focus {
+        border-color: getColor('accent');
+    }
+}
+
+.clients__list{
+    @include centeredFlex();
+}
+
+.clients__item:not(:last-child){
+    margin-right:30px;
+}
+
+.clients__icons {
+    fill: #AFB1B8;
+    @include transition(fill);
+
+    .clients__tumb:hover &,
+    .clients__tumb:focus &{
+        fill: getColor('accent');
+    }
+}

@@ -1,0 +1,73 @@
+.subscribe {
+    margin-left: 93px;
+}
+
+.subscribe__title{
+        font-family: $roboto;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+
+        color: getColor('white');
+}
+
+.subscribe__form{
+    display: flex;
+    align-items: baseline;
+}
+
+.subscibe__input {
+    width: 358px;
+    height: 50px;
+    margin-top: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding-left: 15px;
+
+    color: getColor('white');
+    background-color: transparent;
+
+    @include transition(border-color);
+
+    &:focus {
+        border-color: #188CE8;
+        outline: none;
+    }
+}
+
+.subscribe__btn {
+    @include centeredFlex();
+
+    width: 200px;
+    height: 50px;
+    margin-left: 12px;
+    
+    background-color: getColor('accent');
+    color: getColor('white');
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+
+    font-family: $roboto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+
+    @include transition();
+
+    &:hover,
+    &:focus{
+        background-color: #188CE8;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+}
+
+.subscribe__icon {
+    margin-left: 10px;
+    fill: getColor('white');
+}

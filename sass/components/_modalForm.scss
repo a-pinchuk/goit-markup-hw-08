@@ -1,0 +1,141 @@
+.form {
+    @include centeredBlock();
+    width: 100%;
+}
+
+.form__field {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    & ::placeholder{
+        font-family: $roboto;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
+    }
+}
+
+.form__input {
+    margin-bottom: 10px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 30px;
+
+    @include transition(border-color);
+
+    &:focus{
+        border-color: #188CE8;
+        outline: none;
+    }
+}
+
+.form__textarea {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 10px;
+    resize: none;
+    padding: 12px 16px;
+
+    @include transition(border-color);
+
+    &:focus{
+        border-color: #188CE8;
+        outline: none;
+    }
+}
+
+.form__title {
+    margin-bottom: 4px;
+
+    font-family: $roboto;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: #757575;
+}
+
+// CHECKBOX
+.checkbox {
+    @include centeredFlex();
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.checkbox__input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.checkbox__license {
+    margin-left: 8px;
+    font-family: $roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    
+    color: #757575;
+}
+
+.checkbox__input:checked + .checkbox__icon{
+    border-radius: 2px;
+    fill:none;
+    border-color: getColor('accent');
+    background-color: getColor('accent');
+    background-image: url(../images/icon-check.svg); 
+}
+
+// BTN SUBMIT
+.form__btn-submit {
+    @include centeredFlex();
+    margin: 20px auto 0px auto;
+
+    width: 200px;
+    height: 50px;
+    background: getColor('accent');
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-color: transparent;
+    cursor: pointer;
+
+    font-family: $roboto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    
+    color: getColor('white');
+
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        background: #188CE8;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+    }
+}
+
+.form__icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    fill: getColor('primary-text-color');
+
+    .form__input:focus+&{
+        fill: getColor('accent');
+    }
+    @include transition(fill);
+}
+

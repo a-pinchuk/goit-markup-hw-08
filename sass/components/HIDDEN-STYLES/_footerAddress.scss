@@ -1,0 +1,55 @@
+.footer {
+    background-color: getColor('secondary-background-color');
+}
+
+.logo--white {
+    color: getColor('white');
+    
+}
+
+.footer .container{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    align-items: baseline;
+}
+
+.address-footer {
+    line-height: 1.71;
+    color: getColor(secondary-text-color);
+    margin-top: 20px;
+    
+    @include transition();
+}
+
+
+.address-footer__item{
+    margin-bottom: 9px;
+}
+
+.address-footer__link--grey {
+    font-family: $roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+/* or 171% */
+
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.address-footer__street {
+    font-weight: 400;
+    line-height: 1.71;
+    color: getColor('white');
+}
+
+.address-footer__link:hover,
+.address-footer__link:focus{
+    color: getColor('accent');
+}
+
+
+

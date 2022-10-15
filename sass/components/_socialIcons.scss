@@ -1,0 +1,36 @@
+.social{
+    @include centeredFlex();
+    padding: 0 32px 30px;
+}
+
+.social__icons {
+    fill: #AFB1B8;
+    margin: 12px;
+
+    @include transition(fill);;
+
+    .social__tumb:hover &,
+    .social__tumb:focus &{
+        fill: getColor('white');
+    }
+}
+
+
+.social__item:not(:last-child){
+    margin-right:10px
+}
+
+.social__tumb{
+    background-color: inherit;
+    display: flex;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+
+    @include transition();
+    
+    &:hover,
+    &:focus {
+        background-color: getColor('accent');
+    }
+}

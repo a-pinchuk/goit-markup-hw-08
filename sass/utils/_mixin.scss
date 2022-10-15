@@ -1,0 +1,39 @@
+// centered Items (@include)
+@mixin centeredFlex($type: flex){
+    display: $type;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin centeredBlock($type: block) {
+    display: $type;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+// Animation (@include)
+@mixin transition($type: background-color, $time: 250ms, $animation-type: cubic-bezier(0.4, 0, 0.2, 1)) {
+    transition: $type $time $animation-type;
+}
+
+
+// responsive (@include)
+$media: (
+    mobile: 480px,
+    tablet: 768px,
+    desktop: 1200px,
+);
+
+@mixin media($breakpoint) {
+    @each $breakpoints, $size in $media {
+        @if $breakpoint==$breakpoints {
+            @media screen and (min-width: $size) {
+                @content;
+            }
+        }
+    }
+}
+
+
+

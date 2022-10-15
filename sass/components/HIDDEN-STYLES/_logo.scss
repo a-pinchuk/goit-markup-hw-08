@@ -1,0 +1,13 @@
+.logo {
+    font-family: $raleway;
+    font-size: 26px;
+    text-decoration: none;
+
+    &--black {
+        color: getColor('black');
+    }
+}
+
+.logo--blue {
+    color: getColor('accent');
+}
