@@ -2,10 +2,7 @@
 .works {
     display: flex;
     flex-wrap: wrap;
-
-    @include media-min(desktop){
-        flex-direction: raw;
-    }
+    margin: -15px;
 }
 
 .works__item {
@@ -13,12 +10,12 @@
 
     @include transition(box-shadow);
 
-        &:hover,
-        &:focus {
-            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-        }
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
 
-
+    border: 2px solid teal;
     @include media-min(tablet){
         margin: 15px;
         width: calc((100% - 4 * 15px) / 2);
@@ -27,7 +24,6 @@
     @include media-min(desktop){
         margin: 15px;
         width: calc((100% - 6 * 15px) / 3);
-        
     }
     
 
@@ -78,7 +74,9 @@
 }
 
 .works__lower-content {
-    border: 1px solid #eeeeee;
+    // border: 1px solid #eeeeee;
+
+    border: 2px solid red; 
     border-top: transparent;
     padding: 20px 24px;
 }
