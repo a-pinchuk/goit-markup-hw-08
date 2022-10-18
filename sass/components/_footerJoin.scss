@@ -1,6 +1,18 @@
 .join {
-    margin-left: 70px;
-    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:60px;
+    @include media-min(tablet){
+        margin-left: 70px;
+        margin-top: 0;
+    }
+
+    @include media-min(desktop){
+        align-items: flex-start;
+        margin-right: 93px
+    }
+    
 }
 
 .join__title{  

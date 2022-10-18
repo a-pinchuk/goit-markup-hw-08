@@ -1,11 +1,18 @@
 .nav {
-    display: flex;
-    align-items: center;
+    display: none;
+    @include media-min(tablet){
+        display: flex;
+        align-items: center;
+    }
+
+    @include media-min(desktop){
+        margin-left: 92px;
+    }
+    
 }
 
 .nav__list{
     display: flex;
-    margin-left: 93px;
 }
 
 .nav__list .nav__item:not(:last-child) {
@@ -13,6 +20,14 @@
 }
 
 // NAVIGATION
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 .nav__link {
     color: getColor('primary-text-color');
     font-weight: 500;

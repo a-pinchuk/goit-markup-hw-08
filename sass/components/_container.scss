@@ -3,15 +3,15 @@
     padding-right: 15px;
     margin: 0 auto;
 
-    @include media(mobile){
+    @include media-min(mobile){
         width: 480px;
     }
 
-    @include media(tablet){
+    @include media-min(tablet){
         width: 768px;
     }
 
-    @include media(desktop){
+    @include media-min(desktop){
         width: 1200px;
     }
 }
