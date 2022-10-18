@@ -1785,12 +1785,12 @@ img {
 }
 
 .works__item {
-  margin-bottom: 30px;
+  margin: 15px;
+  width: 100%;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  border: 2px solid teal;
 }
 .works__item:hover, .works__item:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -1814,8 +1814,13 @@ img {
 }
 
 .works__img {
+  width: 100%;
   position: relative;
   overflow: hidden;
+}
+
+.works__image {
+  width: 100%;
 }
 
 .works__overlay {
@@ -1852,7 +1857,7 @@ img {
 }
 
 .works__lower-content {
-  border: 2px solid red;
+  border: 1px solid #eeeeee;
   border-top: transparent;
   padding: 20px 24px;
 }
