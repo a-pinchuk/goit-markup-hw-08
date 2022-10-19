@@ -30,6 +30,12 @@
     display: none;
 }
 
+.burger.is-open{
+    position: fixed;
+    top:10px;
+    right:15px;
+}
+
 .burger.is-open .burger__icon--open{
     display: none;
 }
@@ -59,6 +65,7 @@
         &.is-open{
             display: flex;
             transform: translateX(0);
+            justify-content: space-between;
         }
 }
 
@@ -94,6 +101,10 @@
         background-color: getColor('accent');
         border-radius: 2px;
     }
+}
+
+.mobile-menu__address{
+    justify-content: flex-end;
 }
 
 .mobile-menu__item {

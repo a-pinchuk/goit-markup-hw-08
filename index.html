@@ -74,8 +74,6 @@
                   <a class="mobile-menu__address--grey" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
               </ul>
-            </div>
-            <div class="mobile-menu__social">
               <ul class="mobile-menu__social--flex">
                 <li class="mobile-menu__social-item">
                   <a class="mobile-menu__social-link" href="">Instagram</a>
@@ -163,7 +161,11 @@
           <ul class="todo__list">
             <li class="todo__item">
               <div class="todo__img">
-                <img src="./images/img-1.jpg" alt="процесс програмування" width="370" />
+                <picture>
+                  <source srcset="./images/todo/todo1.jpg 1x, ./images/team/todo1-2x.jpg 2x" media="(min-width: 1200px)">
+                  <img src="./images/img-1.jpg" alt="процесс програмування" width="370" />
+                </picture>
+                
                 <div class="todo__overlay">
                   <p class="todo__text">Десктопні додатки</p>
                 </div>
@@ -171,7 +173,11 @@
             </li>
             <li class="todo__item">
               <div class="todo__img">
-                <img src="./images/img-2.jpg" alt="дизайн телефону" width="370" />
+                <picture>
+                  <source srcset="./images/todo/todo2.jpg 1x, ./images/team/todo2-2x.jpg 2x" media="(min-width: 1200px)">
+                  <img src="./images/img-2.jpg" alt="дизайн телефону" width="370" />
+                </picture>
+                
                 <div class="todo__overlay">
                   <p class="todo__text">Мобільні додатки</p>
                 </div>
@@ -179,7 +185,11 @@
             </li>
             <li class="todo__item">
               <div class="todo__img">
-                <img src="./images/img-3.jpg" alt="підбір колорів" width="370" />
+                <picture>
+                  <source srcset="./images/todo/todo3.jpg 1x, ./images/team/todo3-2x.jpg 2x" media="(min-width: 1200px)">
+                  <img src="./images/img-3.jpg" alt="підбір колорів" width="370" />
+                </picture>
+                
                 <div class="todo__overlay">
                   <p class="todo__text">Дизайнерські рішення</p>
                 </div>
@@ -195,7 +205,13 @@
           <ul class="team__list">
             <li class="team__item">
               <div class="team__container">
-                <img class="team__card" src="./images/human-1.jpg" alt="член команди" width="270" />
+                <picture>
+                  <source srcset="./images/team/hero1l.jpg 1x, ./images/team/hero1l-2x.jpg 2x, ./images/team/hero1l-3x.jpg 3x" media="(min-width: 1200px)">
+                  <source srcset="./images/team/hero1m.jpg 1x, ./images/team/hero1m-2x.jpg 2x, ./images/team/hero1l-3x.jpg 3x" media="(min-width: 768px)">
+                  <source srcset="./images/team/hero1s.jpg 1x, ./images/team/hero1s-2x.jpg 2x, ./images/team/hero1s-3x.jpg 3x" media="(max-width: 767px)">
+                  <img class="team__card" src="./images/human-1.jpg" alt="член команди" width="270" />
+                </picture>
+                
                 <h3 class="team__name">Ігор Дем'яненко</h3>
                 <p class="team__position">Product Designer</p>
                 <ul class="social">
@@ -232,7 +248,13 @@
             </li>
             <li class="team__item">
               <div class="team__container">
-                <img class="team__card" src="./images/human-2.jpg" alt="член команди" width="270" />
+                <picture>
+                  <source srcset="./images/team/hero2l.jpg 1x, ./images/team/hero2l-2x.jpg 2x, ./images/team/hero2l-3x.jpg 3x" media="(min-width: 1200px)">
+                  <source srcset="./images/team/hero2m.jpg 1x, ./images/team/hero2m-2x.jpg 2x" media="(min-width: 768px)">
+                  <source srcset="./images/team/hero2s.jpg 1x, ./images/team/hero2s-2x.jpg 2x" media="(max-width: 767px)">
+                  <img class="team__card" src="./images/human-2.jpg" alt="член команди" width="270" />
+                </picture>
+                
                 <h3 class="team__name">Ольга Рєпіна</h3>
                 <p class="team__position">Frontend Developer</p>
                 <ul class="social">
@@ -269,7 +291,13 @@
             </li>
             <li class="team__item">
               <div class="team__container">
-                <img class="team__card" src="./images/human-3.jpg" alt="член команди" width="270" />
+                <picture>
+                  <source srcset="./images/team/hero3l.jpg 1x, ./images/team/hero3l-2x.jpg 2x, ./images/team/hero3l-3x.jpg 3x" media="(min-width: 1200px)">
+                  <source srcset="./images/team/hero3m.jpg 1x, ./images/team/hero3m-2x.jpg 2x" media="(min-width: 768px)">
+                  <source srcset="./images/team/hero3s.jpg 1x, ./images/team/hero3s-2x.jpg 2x" media="(max-width: 767px)">
+                  <img class="team__card" src="./images/human-3.jpg" alt="член команди" width="270" />
+                </picture>
+                
                 <h3 class="team__name">Микола Тарасов</h3>
                 <p class="team__position">Marketing</p>
                 <ul class="social">
@@ -306,7 +334,13 @@
             </li>
             <li class="team__item">
               <div class="team__container">
-                <img class="team__card" src="./images/human-4.jpg" alt="член команди" width="270" />
+                <picture>
+                  <source srcset="./images/team/hero4l.jpg 1x, ./images/team/hero4l-2x.jpg 2x, ./images/team/hero4l-3x.jpg 3x" media="(min-width: 1200px)">
+                  <source srcset="./images/team/hero4m.jpg 1x, ./images/team/hero4m-2x.jpg 2x" media="(min-width: 768px)">
+                  <source srcset="./images/team/hero4s.jpg 1x, ./images/team/hero4s-2x.jpg 2x" media="(max-width: 767px)">
+                  <img class="team__card" src="./images/human-4.jpg" alt="член команди" width="270" />
+                </picture>
+                
                 <h3 class="team__name">Михайло Єрмаков</h3>
                 <p class="team__position">UI Designer</p>
                 <ul class="social">
